@@ -4,10 +4,10 @@ class Solution {
         int j=1;
         int n = nums.length;
         while(i<n && j<n){
-            if(i<n && nums[i]%2==0){
+            while(i<n && nums[i]%2==0){
                 i+=2;
             }
-            if(j<n && nums[j]%2!=0){
+            while(j<n && nums[j]%2!=0){
                 j+=2;
             }
             if(i<n && j<n){
